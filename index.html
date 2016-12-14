@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Sign In</title>
+<html>
+<head lang="en">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Work Study Program | BMU</title>
+	<meta name="description" content="Work Study Program of BMU Home" />
+	<meta name="keywords" content="learn, earn, student, BMU, engineering, management" />
+	<meta name="author" content="MZed" />
+	<link rel="shortcut icon" href="images/bmulogo.png">
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Anton|Kaushan+Script|Lato|Roboto" rel="stylesheet">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-     <!-- Fixed navbar -->
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/customstyle.css" />
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="50">
+
+<!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -32,56 +33,283 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Student Zone</a>
+          <a class="navbar-brand" href="#">BMU Work Study Program</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#category">Category</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sign Up<span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sign In<span class="caret"></span></a>
               <ul class="dropdown-menu">
-              <form class="form-signup">
+              <form class="form-signin">
               <label for="inputEmail" class="sr-only">Email address</label>
               <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
               <label for="inputPassword" class="sr-only">Password</label>
               <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-              <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
             </form>
               </ul>
             </li>
-            <li class="social"><a href="#">t</a></li>
-            <li class="social"><a href="#">f</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="#" class="hide-search" data-command="toggle-search" data-toggle="tooltip" data-placement="top" title="Toggle Search"><i class="fa fa-ellipsis-v"></i></a></li>S
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+	<div class="row" style="display: none;">
+	    <div class="col-xs-12">
+	        <div class="input-group c-search">
+	            <input type="text" class="form-control" id="contact-list-search">
+	            <span class="input-group-btn">
+	                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search text-muted"></span></button>
+	            </span>
+	        </div>
+	    </div>
+	</div>
 
-        <div class="container">
+<!-- Easy as hell -->
+<div id="home" class="hero">
+<h1></h1>
+<div class="centered">
+<img src="images/bmulogo.png" alt="">
+<h1>BMU</h1>
+<!-- <p>Work Study Program</p> -->
+</div>
+<div id="block" style="position: absolute; z-index: -1; top: 0px; left: 0px; bottom: 0px; right: 0px; overflow: hidden; background-size: cover; background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center; 
+    background-image: none;" data-vide-bg="video/bmuni", poster: "images/bmuni", data-vide-options="posterType: jpg, loop: false, muted: true"></div>
+</div>
 
-      <form class="form-signin">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
+<div id="about-section">
+      <div class="container ab">
+        <h2>About Us</h2>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        </p>
+        <p id="quoted"><span id="left-quote"><img src="images/left-quote.png" alt="Quote"></span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, <span id="right-quote"><img src="images/right-quote.png" alt="Quote"></span></p>
+      </div>
+    </div>
+
+    <div id="about-sec">
+      <div class="container">
+        <p><img src="images/bmulogo.png" alt="Brand"></p>
+        <h3>We are providing paltofrm to earn while you learn</h3>
+        <p>We believe that when the right people comes together , creativity thives,<br>
+        opportunities appear and future brightens</p>
+        <p><a href="#"><b>KNOW MORE ></b></a></p>
+      </div>
+    </div>
+
+    <div id="people">
+      <div class="container">
+        <img src="images/bmustudents.jpg" class="img-responsive" alt="">
+        <div class="pinfo">
+          <h2>We Understand Students.</h2>
+          <p>Positive energy can transform an organization and all starts<br> with th right people with the right work (That's where we come in)</p>
+          <p><a href="#" class="btn btn-lg btn-outline">learn more</a></p>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      </form>
+      </div>
+    </div>
 
-    </div> <!-- /container -->
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <div id="category">
+      <div class="container cat">
+        <h2>Category</h2>
+
+        <div class="row cat1">
+          <div class="col-md-4 sec1 ">
+          <div class="img">
+            <img src="images/management.png" class="img-responsive center-block" alt="Management">
+            <p>Management</p>
+            </div>
+            <div class="info">
+              <p> when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+            </div>
+          </div>
+          <div class="col-md-4 sec2">
+          <div class="img">
+            <img src="images/technical.png" class="img-responsive center-block" alt="Technical">
+            <p>Technical</p>
+            </div>
+            <div class="info">
+              <p> when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+            </div>
+          </div>
+          <div class="col-md-4 sec3">
+          <div class="img">
+            <img src="images/social.png" class="img-responsive center-block" alt="Social">
+            <p>Social</p>
+            </div>
+            <div class="info">
+              <p> when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+            </div>
+          </div>
+        </div>
+        <!-- <hr> -->
+        <!-- <div class="row cat2">
+          <div class="col-md-4 sec1">
+          <div class="img">
+            <img src="images/saas.png" class="img-responsive center-block" alt="SaaS">
+            <p>In-Situ</p>
+            </div>
+            <div class="info">
+              <p> when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+            </div>
+          </div>
+          <div class="col-md-4 sec2">
+          <div class="img">
+            <img src="images/qsr.png" class="img-responsive center-block" alt="Restaurant">
+            <p>Ex-Situ</p>
+            </div>
+            <div class="info">
+              <p> when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+            </div>
+          </div>
+          <div class="col-md-4 sec3">
+          <div class="img">
+            <img src="images/iot.png" class="img-responsive center-block" alt="IOT">
+            <p>Internet</p>
+            </div>
+            <div class="info">
+              <p> when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div id="contact">
+    <div class="container ">
+        <h2><span>Contact</span> Us</h2>
+        <p id="info ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, accusantium magni adipisci ullam animi doloremque fugiat inventore, quo omnis nisi sit, iure, maiores tempora. Odio quidem consectetur beatae, doloremque praesentium!</p>
+        <div class="row cont ">
+            <div class="col-md-4 detail ">
+                <p>+91-9006543210</p>
+                <p>contact@email.com</p>
+            </div>
+            <div class="col-md-7 col-md-offset-1 ">
+            <form class="form-inline ">
+            <div class="form-group col-md-4 ">
+                <input type="text " class="form-control " id="InputName " placeholder="Name ">
+            </div>
+            <div class="form-group col-md-4 ">
+                <input type="email " class="form-control " id="InputEmail " placeholder="you@email.com ">
+            </div>
+            <div class="form-group col-md-4 ">
+                <input type="text " class="form-control " id="InputSubject " placeholder="Subject ">
+            </div>
+        </form>
+        <form action="# ">
+            <div class="form-group ">
+                <textarea class="form-control " id="InputMessage " rows="3 " placeholder="Message "></textarea>
+            </div>
+            <p class="col-md-4 col-md-offset-4 col-sm-offset-0 text-center"><a href="#" class="btn btn-lg btn-block">Send</a></p>
+        </form>
+            </div>
+        </div>
+	  </div>
+	</div>
+
+
+    <div id="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 list">
+                <h4>candidates</h4>
+                <ul>
+                  <li><a href="#">Find a job</a></li>
+                  <li><a href="#">Apply for a job</a></li>
+                  <li><a href="#">Events</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 list">
+              <h4>employees</h4>
+                <ul>
+                  <li><a href="#">Professional staffing</a></li>
+                  <li><a href="#">Light Investment Staffing</a></li>
+                  <li><a href="#">Payment Services </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-12 list newsletter">
+                <div class="col-md-12">
+                  <span>
+                  <h4>newsletter</h4>
+                  <p>Be in the show</p></span>
+                  <form class="form">
+                    <input type="email" class="form-control" id="InputEmail" placeholder="you@email.com">
+                  </form>
+                </div>
+                <div class="col-md-12 social-links">
+                  <h4>Follow Us</h4>
+                  <div class="social-icon">
+                  <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                  </div>
+                  <a href="#"><h4 class="blog">blog >></h4></a>
+                </div>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="foot container">
+        <div class="row">
+              <div class="col-md-6 left-fut">
+                <p>&copy 2016 BMU Work Study Program | Designed by <a href="#">MZed</a> and <a href="#">Team</a></p>
+              </div>
+              <div class="col-md-6 right-fut">
+                <p>All Rights Reserved</p>
+              </div>
+        </div>
+      </div>
+    </footer>
+
+<!-- <br><br>
+
+<div id="block2" style="width: 100%; height: 500px;"
+  data-vide-bg="mp4: video/ocean, webm: video/ocean, ogv: http://vodkabears.github.io/vide/video/ocean, poster: video/ocean"
+  data-vide-options="position: 0% 50%">
+</div> -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- JavaScrip Search Plugin -->
+<script src="https://rawgit.com/stidges/jquery-searchable/master/dist/jquery.searchable-1.0.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="../libs/jquery/dist/jquery.min.js"><\/script>')</script>
+<script src="js/jquery.vide.js"></script>
+<script>
+//  $(document).ready(function () {
+//    $('#block').vide('video/ocean'); // Non declarative initialization
+//
+//    var instance = $('#block').data('vide'); // Get the instance
+//    var video = instance.getVideoObject(); // Get the video object
+//    instance.destroy(); // Destroy instance
+//
+//    $('#block2').vide({
+//      'mp4': 'video/ocean',
+//      'webm': 'video/ocean',
+//      'ogv': 'video/ocean',
+//      'poster': 'video/ocean',
+//    });
+//  });
+</script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
-  </body>
+</body>
 </html>

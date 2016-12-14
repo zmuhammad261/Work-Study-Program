@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Sign Up | WSP</title>
+    <meta name="description" content="Work Study Program of BMU Home" />
+  <meta name="keywords" content="learn, earn, student, BMU, engineering, management" />
+  <meta name="author" content="MZed" />
+  <link rel="shortcut icon" href="images/bmulogo.png">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+     <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">BMU Work Study Program</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li><a href="javascript:void(0)" data-toggle="modal" onclick="openRegisterModal();"><span class="glyphicon glyphicon-log-in "></span> Sign In</a></li> -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sign In<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+              <form class="form-signin">
+              <label for="inputEmail" class="sr-only">Email address</label>
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+              <label for="inputPassword" class="sr-only">Password</label>
+              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
+            </form>
+              </ul>
+            </li>
+            <li class="social"><a href="#">t</a></li>
+            <li class="social"><a href="#">f</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+        <div class="container">
+
+      <form id="sign-up" class="form-signup-extend">
+        <h2 class="form-signup-heading">Sign Up Details</h2>
+        <label for="inputName" class="sr-only">Name</label>
+        <input type="text" id="inputName" class="form-control" placeholder="Name" required autofocus>
+        <label for="inputid" class="sr-only">Student ID</label>
+        <input type="text" id="inputid" class="form-control" placeholder="Student ID" required autofocus>
+        <label for="inputstream" class="sr-only">Stream</label>
+        <label for="inputbatch" class="sr-only">Batch</label>
+        <input type="number" id="inputbatch" class="form-control" placeholder="Batch" min="2014" max="2016" required autofocus>
+        <label for="inputcgpa" class="sr-only">CGPA</label>
+        <input type="number" id="inputcgpa" class="form-control" placeholder="CGPA" min="1" max="10" step="0.01" required autofocus>
+        <select class="form-control">
+        <option>Scholarship</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+      <select class="form-control">
+        <option>School</option>
+        <option>SOET</option>
+        <option>SOM</option>
+      </select>
+        <input type="text" id="inputstream" class="form-control" placeholder="Stream" required autofocus>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+      </form>
+
+    </div> <!-- /container -->
+<div id="get-social">
+    <div class="container">
+      <div class="social">
+    <a class="circle github" href="#">
+      <i class="fa fa-github fa-fw"></i>
+    </a>
+    <a id="google_login" class="circle google" href="#">
+      <i class="fa fa-google-plus fa-fw"></i>
+    </a>
+    <a id="facebook_login" class="circle facebook" href="#">
+      <i class="fa fa-facebook fa-fw"></i>
+    </a>
+  </div>
+    </div>
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

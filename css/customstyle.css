@@ -246,7 +246,7 @@ transition: all 0.25s linear;
     opacity: 0.9;
 }
 
- #people .pinfo p>a {
+ #people .pinfo p>a, #contact p>a {
     color: #fff;
     border: 2px solid #fff;
     -webkit-border-radius: 0;
@@ -264,7 +264,7 @@ transition: all 0.25s linear;
     transition: all .5s ease-in-out;
 }
 
-#people .pinfo p>a:hover {
+#people .pinfo p>a:hover, #contact p>a:hover {
     background-color: #fff;
     color: rgba(0, 0, 0, 0.5);
     font-weight: 500;

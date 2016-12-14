@@ -15,7 +15,6 @@ body {
   padding-top: 40px;
   font-size: 18px;
   margin:0;
-
 }
 
 .navbar-default .navbar-right>li.social>a{
@@ -25,7 +24,6 @@ body {
 
 .navbar-default .navbar-brand {
     color: #e74c3c;
-    font-weight: 700;
     background-color: transparent;
     font-family: 'Anton', sans-serif;
     text-shadow: 2px 2px 2px #333;
@@ -33,7 +31,6 @@ body {
 
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
     color: #e74c3c;
-    font-weight: 700;
     background-color: transparent;
 }
 
@@ -55,22 +52,24 @@ body {
 .navbar-default {
     background-color: #34495e;
     border: 1px solid #2c3e50;
+    font-size: 15px;
 }
 
 .navbar-default .navbar-nav>li>a {
     color: #fff;
 }
 
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav li>a:focus, .navbar-default .navbar-nav li>a:hover {
     color: #fc5;
     background-color: transparent;
 }
 
 .navbar-nav>li>.dropdown-menu {
     width: 250px;
+    background: #f7f7f7;
 }
 
-.form-signin {
+.form-signup, .form-signup-extend {
   max-width: 375px;
       padding: 70px 50px;
   margin: 125px auto 0;
@@ -79,18 +78,39 @@ body {
   box-shadow: 2px 2px 15px #999;
 }
 
-.form-signup {
+#job-create{
+  margin-top: 75px;
+}
+
+.form-job-create {
+  max-width: 550px;
+      padding: 70px 50px;
+  margin: 50px auto 125px;
+  background: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 2px 2px 15px #999;
+}
+
+.form-job-create textarea{
+  resize: vertical;
+}
+
+.form-signin {
   max-width: 375px;
       padding: 40px 20px;
   background: #f7f7f7;
   border-radius: 5px;
 }
 
-.form-signup button{
+.form-signin button, .form-signup-extend button{
   margin-top: 10px;
 }
 
-.form-signin .btn-group-lg>.btn, .btn-lg, .form-signup .btn-group-lg>.btn, .btn-lg, .login .btn-login, .registerBox .btn-register {
+.form-job-create button{
+  margin-top: 25px;
+}
+
+.form-signin .btn-group-lg>.btn, .btn-lg, .form-signup .btn-group-lg>.btn, .form-signup-extend .btn-group-lg>.btn, .form-job-create .btn-group-lg>.btn, .btn-lg, .login .btn-login, .registerBox .btn-register {
     padding: 5px 16px;
     font-size: 18px;
     line-height: 1.3333333;
@@ -104,26 +124,24 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.form-signin .btn-primary:hover, .login .btn-login:hover, .registerBox .btn-register:hover {
+.form-signin .btn-primary:hover, .form-signup .btn-primary:hover, .form-signup-extend .btn-primary:hover, .form-job-create .btn-primary:hover, .login .btn-login:hover, .registerBox .btn-register:hover {
     color: #fff;
     background-color: #34495e;
     border-color: #34495e;
 }
 
-
-
-.form-signin .form-signin-heading{
+.form-signup .form-signup-heading, .form-signup-extend .form-signup-heading{
   text-align: center;
 }
 
-.form-signin .form-signin-heading,
-.form-signin .checkbox {
+.form-signup .form-signup-heading,
+.form-signup .checkbox {
   margin-bottom: 10px;
 }
-.form-signin .checkbox {
+.form-signup .checkbox {
   font-weight: normal;
 }
-.form-signin .form-control, .login .form-control {
+.form-signup .form-control, .form-signup-extend .form-control, .form-job-create .form-control, .login .form-control {
   position: relative;
   height: auto;
   -webkit-box-sizing: border-box;
@@ -133,7 +151,7 @@ body {
   font-size: 16px;
   margin-top: 5px;
 }
-.form-signin .form-control:focus, .login .form-control:focus {
+.form-signup .form-control:focus, .form-signup-extend .form-control:focus, .login .form-control:focus {
   z-index: 2;
   border-color: #34495E;
     outline: 0;
@@ -141,15 +159,26 @@ body {
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(52, 73, 94,.6);
 }
 
-.form-signin input[type="email"] {
+.form-signup input[type="email"] {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
+.form-signup input[type="password"], .form-signin input[type="password"] {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.form-signup select{
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: 5px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .login .box .form input[type="text"]{
@@ -408,6 +437,11 @@ body {
     color:  #00A4E4;
 }
 
+#sign-up img{
+  max-width: 150px;
+  margin: 25px auto;
+}
+
 /*Screen*/
 
 #screen{
@@ -610,4 +644,326 @@ table {
 
 #footer .widget_calendar a, .s1 .widget_calendar a {
     color: #ff9a55;
+}
+
+/*search box*/
+
+@media (max-width: 767px) {
+    .visible-xs {
+        display: inline-block !important;
+    }
+    .block {
+        display: block !important;
+        width: 100%;
+        height: 1px !important;
+    }
+}
+#back-to-bootsnipp {
+    position: fixed;
+    top: 10px; right: 10px;
+}
+
+
+.c-search > .form-control {
+   border-radius: 0px;
+   border-width: 0px;
+   border-bottom-width: 1px;
+   font-size: 1.3em;
+   padding: 12px 12px;
+   height: 44px;
+   outline: none !important;
+}
+.c-search > .form-control:focus {
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none;
+}
+.c-search > .input-group-btn .btn {
+   border-radius: 0px;
+   border-width: 0px;
+   border-left-width: 1px;
+   border-bottom-width: 1px;
+   height: 44px;
+}
+
+
+.c-list {
+    padding: 0px;
+    min-height: 44px;
+}
+.title {
+    display: inline-block;
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+ul.c-controls {
+    list-style: none;
+    margin: 0px;
+    min-height: 44px;
+}
+
+ul.c-controls li {
+    margin-top: 8px;
+    float: left;
+}
+
+ul.c-controls li a {
+    font-size: 1.7em;
+    padding: 11px 10px 6px;   
+}
+ul.c-controls li a i {
+    min-width: 24px;
+    text-align: center;
+}
+
+ul.c-controls li a:hover {
+    background-color: rgba(51, 51, 51, 0.2);
+}
+
+.c-toggle {
+    font-size: 1.7em;
+}
+
+.name {
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+.c-info {
+    padding: 5px 10px;
+    font-size: 1.25em;
+}
+
+.badge{
+  margin: 0 7px 0;
+}
+
+.togglestatus{
+  margin-left: 20px;
+}
+
+.more-options{
+  padding-bottom: 50px;
+}
+
+.more-options a{
+  color: #fff;
+  margin: 0 25px;
+}
+
+#navigationTabs a{
+ text-decoration: none;
+ color: #FF9A55 !important;
+}
+
+#navigationTabs .max-width-container .navTabItem.active {
+    border-bottom: none !important;
+    color: #FF9A55 !important;
+}
+
+#contactpage {
+  font-family: 'Lato', georgia;
+  margin-top: 50px;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(236, 181, 62, 0.95);
+  text-align: center;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+#contact-form {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+#contactpage label {
+  font-weight: 400;
+  cursor: pointer;
+}
+
+#contactpage textarea,
+#contactpage input {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  text-align: center;
+  background: none;
+  font-weight: 700;
+  font-family: 'Lato', georgia;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 1);
+  max-width: 90%;
+  padding: 1rem;
+  border: 2px dashed rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  cursor: text;
+}
+
+#contactpage textarea {
+  text-align: left;
+  /* overflow:hidden; */
+  
+  resize: none;
+  width: 90%;
+  border-color: rgba(255, 255, 255, 0)
+}
+
+#contactpage textarea:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px dashed rgba(255, 255, 255, 1);
+}
+
+#contactpage textarea:focus:required:valid {
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#contactpage textarea:required:valid {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#contactpage input {
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.5);
+}
+
+#contactpage input:required,
+#contactpage textarea:required {
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.5);
+}
+
+#contactpage input:focus {
+  border-bottom: 2px dashed rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#contactpage input:required:valid {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#contactpage input:required:invalid {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#contactpage ::-webkit-input-placeholder {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  font-weight: 400;
+}
+
+#contactpage :-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  font-weight: 400;
+}
+
+#contactpage ::-moz-placeholder {
+  /* Firefox 19+ */
+  
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  font-weight: 400;
+}
+
+#contactpage :-ms-input-placeholder {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.expanding {
+  vertical-align: top;
+}
+
+.send-icn {
+  fill: rgba(255, 255, 255, 1)
+}
+
+.send-icn:hover {
+  fill: rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+#contactpage button {
+  background: none;
+  border: none;
+  outline: none;
+  margin: 2vmax;
+}
+
+#contactpage button:hover small {
+  opacity: 1;
+}
+
+small {
+  display: block;
+  opacity: 0;
+}
+
+.website {
+  opacity: 1;
+  font-size: 16px;
+  color: white;
+  position: relative;
+  text-align: center;
+  display: block;
+  margin-top: 7%;
+  
+}
+
+.website a {
+  color: white;
+}
+
+/*Team Page*/
+
+.team-section {
+  padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .team-section {
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 992px) {
+  .team-section {
+    padding-bottom: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  .team-section {
+    padding-bottom: 150px;
+  }
+}
+@media (min-width: 668px) and (max-width: 767px) {
+  .team-carousel .team-item-info {
+    padding: 90px 40px 0 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .team-carousel .team-item-info {
+    padding: 50px 30px 0 30px;
+  }
+}
+@media (min-width: 992px) {
+  .team-carousel .team-item-info {
+    padding: 40px 80px 0 80px;
+  }
+}
+@media (min-width: 992px) {
+  #team-carousel-3 .team-item-info {
+    padding: 40px 20px 0 20px;
+  }
+  #team-carousel-3 .owl-item img {
+    display: inline-block;
+    width: auto;
+    height: 350px;
+    margin: 20px 0;
+  }
 }
