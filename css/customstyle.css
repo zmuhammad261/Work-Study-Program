@@ -443,7 +443,7 @@ textarea {
 #content{
 	background: #f1f0ee;
 	    box-shadow: 1px 1px 10px #999;
-    margin: 30px 20px 30px 20px;
+    /*margin: 30px 20px 30px 20px;*/
 }
 
 #content .container{

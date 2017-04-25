@@ -510,9 +510,9 @@ footer{
   margin: auto;
 }
 
-#content{
+/*#content{
   margin-top: 30px;
-}
+}*/
 
 #content .table-row .table-cell .internship_list_container {
     padding: 0 30px !important;
